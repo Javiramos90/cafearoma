@@ -1,0 +1,69 @@
+:root{
+    --color-primary:#4a3f35;
+    --color-secundary:#d4a373;
+    --color-background:#faf3e0;
+    --font-main:Arial, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-main);
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    line-height: 1.6;
+    width: 100%;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-primary);
+    width: 100%;
+    top: 0;
+    max-width: 1200px;
+    padding: 0.7rem;
+    /* para que la barra no desaparezca al hacer scrool */
+    position: fixed;
+    /* parametros a los que se superpone el scrool */
+    z-index: 1000;
+}
+
+nav a{
+    color: white;
+    text-decoration: none; 
+}
+nav a:hover{
+    color:var(--color-secundary);
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+.portada{
+    height: 100vh;
+    background-image: url("../img/backgroun-image.jpeg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.carta-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 3rem 1rem auto;
+}
+.carta-grid p{
+    background-color: white;
+    width: 250px;
+    
+}
+img{
+    width: 250px;
+}
