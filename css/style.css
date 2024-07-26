@@ -15,7 +15,6 @@ body{
     color: var(--color-primary);
     line-height: 1.6;
     width: 100%;
-
 }
 nav{
     display: flex;
@@ -23,8 +22,8 @@ nav{
     background-color: var(--color-primary);
     width: 100%;
     top: 0;
-    max-width: 1200px;
-    padding: 0.7rem;
+    /* max-width: 1200px; */
+    padding: 1rem;
     /* para que la barra no desaparezca al hacer scrool */
     position: fixed;
     /* parametros a los que se superpone el scrool */
@@ -33,7 +32,7 @@ nav{
 
 nav a{
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
 }
 nav a:hover{
     color:var(--color-secundary);
@@ -44,20 +43,40 @@ h3{
 }
 
 .portada{
-    height: 100vh;
-    background-image: url("../img/backgroun-image.jpeg");
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
     text-align: center;
     color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.portada::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../img/backgroun-image-1.jpeg") no-repeat center center / cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+h3{
+    font-size: 1.5rem;
+}
+.eleccion{
+    padding-top: 2rem;
 }
 .carta-grid{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 1rem 3rem 1rem auto;
+    justify-content: center;
+    
+}
+.imagencafe{
+    margin: 2rem 1rem 2rem 1rem;
 }
 .carta-grid p{
     background-color: white;
