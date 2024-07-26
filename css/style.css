@@ -91,16 +91,43 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: center;
+
     
 }
 .imagencafe{
     margin: 2rem 1rem 2rem 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h2{
+    padding-left: 1rem;
 }
 .carta-grid p{
-    background-color: white;
-    width: 250px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding-left: 1.2rem;
     
 }
 img{
-    width: 250px;
+    width: 350px;
+    border-radius: 8px;
+}
+h4{
+    background-color: var(--color-secundary);
+    font-size: 25px;
+}
+.contacto{
+    background-color: var(--color-secundary);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10rem;
+}
+.contacto input, textarea{
+  padding-bottom: 10px;
+  border-radius: 8px;
 }
