@@ -37,6 +37,24 @@ nav a{
 nav a:hover{
     color:var(--color-secundary);
 }
+h1{
+    /* font-size: 3rem;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    animation-name:cafearoma;
+    animation-duration: 5s;
+    color:white; */
+    font-size: 50px;
+    margin-bottom: 1rem;
+    animation-name: fadeIn; 
+    animation-duration: 2s;
+
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px);}
+    to { opacity: 1; transform: translateY(0); }
+}
 h3{
     display: flex;
     justify-content: center;
