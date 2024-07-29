@@ -49,7 +49,6 @@ h1{
     margin-bottom: 1rem;
     animation-name: fadeIn; 
     animation-duration: 2s;
-
 }
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px);}
@@ -90,9 +89,15 @@ h3{
 .carta-grid{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-
-    
+    justify-content: center;    
+}
+.imagencafe:hover{
+    animation-name: cafe; 
+    animation-duration: 2s;
+}
+@keyframes cafe{
+    from {transform: translateY(0);}
+    to {transform: translateY(-10); }
 }
 .imagencafe{
     margin: 2rem 1rem 2rem 1rem;
@@ -108,8 +113,7 @@ h2{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    padding-left: 1.2rem;
-    
+    padding-left: 1.2rem;  
 }
 img{
     width: 350px;
